@@ -9,7 +9,7 @@
 //membuat deklarasi variable
 $hostname = "localhost";
 $username = "root";
-$password = "maulayyacyber17";
+$password = $_SERVER['PASSWORD'];
 $database = "belajar-php-mysql";
 //create variable connectin
 $connection = mysqli_connect($hostname, $username, $password, $database);
