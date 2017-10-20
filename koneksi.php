@@ -13,16 +13,12 @@ $password = "maulayyacyber17";
 $database = "belajar-php-mysql";
 //create variable connectin
 $connection = mysqli_connect($hostname, $username, $password, $database);
-//checking connection
-if(!$connection)
-  {
-    
-    echo "Koneksi Gagal! : " . mysqli_connect_error();
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
 
-  }else{
-
-  	//echo "Koneksi Berhasil!";
-
-  }
-
+/*The closing ?> tag MUST be omitted from files containing only PHP.
+ Reff http://www.php-fig.org/psr/psr-2/#22-files
  ?>
+ */
