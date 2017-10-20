@@ -3,7 +3,8 @@
 This repository created by tutorial https://www.rubypedia.com
 ***
 
-info lengkap :
+### info lengkap :
 
 Fika Ridaul Maulayya
+
 ridaulmaulayya@gmail.com
