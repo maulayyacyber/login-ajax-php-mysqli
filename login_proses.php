@@ -12,7 +12,7 @@ require_once('koneksi.php');
  if(isset($_POST['btn-login']))
  {
 
-  $email 	= $_POST['user_email'];
+  $email 	= mysql_escape_string($_POST['user_email']);
   $password = md5($_POST['password']);
   
   $query  = "SELECT * FROM tbl_users WHERE email='$email' AND password='$password'";
